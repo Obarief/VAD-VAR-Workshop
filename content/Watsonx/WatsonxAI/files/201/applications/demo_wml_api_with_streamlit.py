@@ -46,6 +46,7 @@ def get_credentials():
     globals()["watsonx_project_id"] = os.getenv("project_id", None)
 
     print("*** Got credentials***")
+    print(f"Project ID: {watsonx_project_id}")
 
 # The get_model function creates an LLM model object with the specified parameters
 def get_model(model_type,max_tokens,min_tokens,decoding,stop_sequences):
